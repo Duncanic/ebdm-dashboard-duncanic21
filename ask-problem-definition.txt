@@ -1,0 +1,27 @@
+Problem Focus: Employee blowout
+
+Short description:
+Employee blowout refers to frequent episodes of burnout, sudden resignations, and abrupt declines in productivity among staff caused by chronic workload imbalance, unclear role expectations, and insufficient support.
+
+PICOC summary:
+P (Population): Frontline employees and middle managers in the operations and customer-support teams (approx. 120 staff).
+I (Intervention): Introduce workload rebalancing, clarify role responsibilities, implement manager training on psychological safety, and offer targeted well-being support (coaching + flexible scheduling trial).
+C (Comparison): Current ad-hoc support and reactive HR interventions (status quo) or a limited wellness stipend-only approach.
+O (Outcomes): Reduced voluntary turnover rate (target: -20% in 12 months), improved engagement scores (+15 points on pulse surveys), decreased sick-days (-25%), and improved time-to-resolution metrics.
+C (Context): Mid-sized technology firm operating across two locations; hybrid work model; high growth over past 18 months.
+
+Clear problem statement:
+Employees in operations and customer-support are experiencing frequent burnout and abrupt departures that disrupt service delivery and increase costs; a structured, evidence-based workload and manager-support intervention is required to stabilize retention and performance.
+
+Why this matters:
+- Impact on organization: Increased recruitment costs, knowledge loss, and inconsistent customer experience.
+- Stakeholder impact: Customers face longer resolution times; remaining staff experience higher workloads and decreased morale.
+- Strategic alignment: Stabilizing retention supports product quality, customer retention, and cost control.
+
+Evidence questions to explore:
+- For the problem: What do exit interviews, sick-day records, and engagement surveys reveal about root causes and prevalence?
+- For the solution: Which workload-rebalancing practices and manager-support programs have measurable success in comparable firms?
+
+Next steps:
+1) Collect HR metrics (turnover, sick days, engagement) for the last 18 months.
+2) Pilot manager training and flexible scheduling in one team for 3 months and measure outcomes.
