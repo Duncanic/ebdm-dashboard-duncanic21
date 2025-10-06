@@ -1,0 +1,107 @@
+Documentation Process — how we record, version, and publish evidence for the dashboard
+
+Purpose
+Record a repeatable, auditable process for searching, screening, extracting, appraising, and publishing evidence used in the dashboard.
+
+Scope
+Applies to all evidence collected for the project (scientific, practitioner, organizational, stakeholder) and the files inside the `content/` folder that appear on the dashboard.
+
+Owners & Roles
+- Research lead: defines questions, approves final synthesis
+- Searcher(s): run database searches and export raw results (CSV/PMIDs)
+- Screeners (2 reviewers recommended): title/abstract screening, record exclusion reasons
+- Extractor(s): populate the extraction CSV and the `content/evidence-*-sources.txt` files
+- Appraiser(s): apply the appraisal rubric in `content/evidence-scientific-appraisal.txt`
+- Dashboard maintainer: updates `content/` files, handles commits/PRs, verifies rendering
+
+Storage, Versioning & Branching
+- Store all working files in this repo under `content/`.
+- Use Git for version control. Create feature branches for large updates (branch name: feat/evidence-YYYYMMDD).
+- Commit messages: scope: short-summary (e.g. evidence: add 10 PMIDs from PubMed export)
+- For major updates, create a PR and request at least one reviewer.
+
+File naming and metadata
+- Use human-friendly filenames in `content/` (e.g., `evidence-scientific-sources.txt`).
+- Add a small metadata header when creating or updating study entries (example below).
+
+Metadata header template (paste at the top of a study entry)
+- Title: 
+- PMID: 
+- DOI: 
+- Year: 
+- Country: 
+- Study design: 
+- Sample size: 
+- Instrument: 
+- Tags: (e.g., intervention, prevalence, instrument)
+- Date added: YYYY-MM-DD
+
+Evidence extraction CSV (recommended columns)
+- PMID
+- Full citation (APA)
+- Year
+- Country
+- Study design
+- Population (profession, N)
+- Setting
+- Instrument used
+- Key outcomes / effect sizes / mean scores
+- Intervention description (if applicable)
+- Follow-up duration
+- Confounders adjusted
+- Funding / COI
+- Appraisal score (numeric)
+- Notes / applicability to local context
+
+Appraisal & Quality tracking
+- Use the appraisal rubric in `content/evidence-scientific-appraisal.txt`.
+- Record numeric scores per study in the CSV and paste short justification into the appraisal file next to the study entry.
+
+Change log & audit trail
+- Small edits: commit with a clear message.
+- Large edits or additions: update `CHANGELOG.md` (create one if not present) with date, files changed, and rationale.
+
+How to add a new study (practical steps)
+1. Run the saved PubMed search and export results as CSV with PMIDs.
+2. Remove duplicates and do title/abstract screening (record exclusions in a CSV column called 'exclusion_reason').
+3. For included full-texts, extract data into the extraction CSV (columns above).
+4. For each extracted study, add a study entry to `content/evidence-scientific-sources.txt` using the metadata header template and a 2–5 sentence summary of key findings.
+5. Add the appraisal numeric score and brief justification to `content/evidence-scientific-appraisal.txt` (use the rubric as guidance).
+6. Commit the updated CSV and `content/` files (preferably in a feature branch) and open a PR for review.
+
+Dashboard update & verification
+- The `content-loader.js` script loads files from `content/` automatically. After a commit, open `index.html` locally to verify rendering.
+- If a file doesn’t render, check for accidental HTML tags or unsafe content; use `enableAdvancedContent()` in the console to troubleshoot formatting.
+
+Templates (copy/paste examples)
+
+Study entry example (for `content/evidence-scientific-sources.txt`)
+Title: Organizational intervention to reduce burnout in nurses
+PMID: 12345678
+Year: 2022
+Study design: Cluster randomized trial
+Sample size: 12 hospitals, 1,240 nurses
+Instrument: MBI (exhaustion subscale)
+Key findings: Intervention reduced mean exhaustion score by 0.8 (95% CI 0.5–1.1) at 6 months; reduction in sick-leave days not statistically significant.
+Appraisal score: 10/14
+Notes: Moderate external validity; intervention required additional staffing resources.
+
+Appraisal entry example (for `content/evidence-scientific-appraisal.txt`)
+PMID: 12345678 — Score: 10/14
+Justification: Cluster RCT with adequate blinding methods for outcome assessors (item: design=2), large sample (item: sample size=2), used validated MBI (measurement=2), some missingness not reported (follow-up=1), limited confounder adjustment (confounding=1). Funding from healthcare provider (COI=1).
+
+Review cadence & responsibilities
+- Search & update major evidence summaries quarterly (or sooner for urgent decisions).
+- Quick check for new high-quality evidence monthly (subscribe to saved PubMed alerts).
+
+Automation & scripts
+- If you want automation: create a script that accepts a PubMed export CSV, de-duplicates PMIDs, and generates pre-filled study entries and appraisal drafts into the `content/` files. Place automation scripts in `/scripts/` and document usage in `README.md`.
+
+Privacy & access
+- Do not store identifiable personal data in `content/` files. Keep participant-level data in secured, access-controlled storage outside the repo.
+
+Contact / escalation
+- For questions about the documentation process contact the Research lead (add name/email here).
+
+---
+Last updated: 2025-09-24

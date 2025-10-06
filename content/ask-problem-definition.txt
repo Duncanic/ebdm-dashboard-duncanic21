@@ -1,0 +1,26 @@
+Problem Focus: Employee burnout in healthcare workers
+
+Short description:
+Employee burnout is a workplace syndrome caused by ongoing job-related stress. It is marked by emotional exhaustion, growing detachment or cynicism, and a diminished sense of effectiveness in one’s role. Burnout negatively impacts employee well-being, job performance, and retention.
+
+PICOC summary:
+**P** (Population): Healthcare employees (nurses, physicians, and other frontline staff)
+**I** (Intervention): Organizational strategies to reduce burnout (e.g., wellness programs, workload management, professional development, employee recognition, and mental health support)
+**C** (Comparison): Standard practice with little or no structured burnout-prevention strategies
+**O** (Outcomes): Reduced employee burnout, improved well-being, higher retention rates, enhanced job satisfaction, and improved quality of patient care
+**C** (Context): Healthcare settings with high job demands, emotional strain, and staffing shortages
+
+Clear problem statement:
+Burnout among healthcare employees has become a critical issue, driven by high job demands, long working hours, and emotional strain. This condition leads to emotional exhaustion, detachment from patients, and a reduced sense of professional accomplishment.
+
+Why this matters:
+- Impact on organization: Burnout directly weakens the healthcare workforce. High turnover, absenteeism, and reduced productivity increase costs for recruitment, training, and overtime coverage.
+- Stakeholder impact: For employees, burnout erodes well-being, morale, and career longevity. For patients, care quality and safety decline when staff are exhausted and disengaged. For administrators, constant turnover and performance gaps create financial strain and leadership challenges. For communities, healthcare shortages due to burnout reduce access to reliable, compassionate care.
+- Strategic alignment: Stabilizing retention supports product quality, customer retention, and cost control.
+
+Evidence questions to explore:
+- For the problem: What is the prevalence of burnout among different categories of healthcare employees (nurses, physicians, allied health staff)?
+- For the solution: Which organizational interventions (e.g., wellness programs, schedule flexibility, professional development) are most effective in reducing burnout?
+Next steps:
+1) Collect HR metrics (turnover, sick days, engagement) for the last 18 months.
+2) Pilot manager training and flexible scheduling in one team for 3 months and measure outcomes.

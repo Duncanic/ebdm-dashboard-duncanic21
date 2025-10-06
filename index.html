@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My EBM Dashboard | MGT357 - Fall 2025</title>
+    <style>
+        /* === CSS CUSTOM PROPERTIES === */
+        :root {
+            /* Light green / mint color scheme */
+            --accent-red: #2e8b57;    /* repurposed as primary green */
+            --accent-yellow: #d6f3df; /* soft mint for accents / active tab */
+            --accent-blue: #1f5f44;   /* deep green for headings and contrast */
+            --primary-gradient: linear-gradient(135deg, #f6fff6 0%, #eefbf0 100%);
+            --tab-active: var(--accent-yellow);
+            --tab-inactive: #9acaa8;
+            --step-green: var(--accent-yellow);
+            --step-blue: var(--accent-blue);
+            --border-radius: 15px;
+            --transition-speed: 0.3s;
+            --text-dark: #0b3d2e; /* primary dark text color */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--primary-gradient);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--accent-blue);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: visible; /* allow full-page vertical scrolling so all responses appear on one page */
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--accent-blue), #1b6aa0);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .student-info {
+            background: rgba(31, 95, 68, 0.05);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 0.9em;
+        }
+
+        /* === SIMPLE TAB SYSTEM === */
+        .tab-nav {
+            display: flex;
+            background: #f2f6fb;
+            border-bottom: 3px solid #dfeaf6;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            background: var(--tab-inactive);
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all var(--transition-speed);
+            border: none;
+            border-right: 2px solid white;
+        }
+
+        .tab-button:last-child {
+            border-right: none;
+        }
+
+        .tab-button:hover {
+            background: var(--accent-yellow);
+            transform: translateY(-2px);
+        }
+
+        .tab-button.active {
+            background: var(--tab-active);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(20, 34, 58, 0.12);
+        }
+
+        .tab-content {
+            position: relative;
+            min-height: 500px;
+        }
+
+        .tab-panel {
+            display: none;
+            padding: 40px;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* === FLOWCHART STYLING === */
+        .flowchart-step {
+            background: var(--accent-red);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            margin: 15px 0;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(4, 18, 34, 0.06);
+        }
+
+        .decision-diamond {
+            background: var(--step-blue);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+            position: relative;
+            transform: rotate(45deg);
+        }
+
+        .decision-diamond .text {
+            transform: rotate(-45deg);
+            font-weight: bold;
+        }
+
+        .content-file-preview {
+            background: #f7f9fc;
+            border: 2px dashed #d6e2f2;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .content-file-preview:hover {
+            border-color: var(--accent-yellow);
+            background: #f8fbfd;
+        }
+
+        .content-file-preview h4 {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Show full responses inline on the page: wrap long lines but allow content to expand vertically */
+        .content-file-preview pre {
+            white-space: pre-wrap;    /* allow wrapping */
+            word-break: break-word;
+            overflow: auto;          /* allow internal scrolling inside cards */
+            max-height: 180px;      /* keep cards the same height and avoid page overflow */
+            background: transparent;  /* keep visual style consistent */
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 8px;
+            line-height: 1.45;
+            font-family: inherit;
+            font-size: 0.95em;
+        }
+
+        /* Card layout and actions */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            align-items: start;
+        }
+
+        .content-file-preview {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 240px; /* equal-weight visual cards */
+            background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+            border: 1px solid #e6eef9;
+        }
+
+        .card-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .card-actions .btn {
+            padding: 8px 12px;
+            font-size: 0.85em;
+            border-radius: 12px;
+        }
+
+        /* Modal / overlay for reading full content */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(6,12,22,0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            padding: 20px;
+        }
+
+        .modal-overlay.active { display: flex; }
+
+        .modal-card {
+            width: 100%;
+            max-width: 1000px;
+            max-height: 90vh;
+            overflow: auto;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 30px 80px rgba(2,10,30,0.12);
+            color: var(--text-dark);
+        }
+
+        .modal-card .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .modal-card .modal-body { line-height: 1.6; }
+
+
+        /* Responsive typography and layout adjustments */
+        @media (max-width: 900px) {
+            .content-file-preview pre {
+                font-size: 0.92em;
+            }
+            .student-info {
+                grid-template-columns: 1fr;
+            }
+            .tab-panel {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .content-file-preview pre {
+                font-size: 0.9em;
+            }
+            .header h1 { font-size: 1.6em; }
+        }
+
+        .edit-notice {
+            background: #f8fbff;
+            border: 1px solid #dfeaf6;
+            color: #0b2545;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 0.8em;
+        }
+
+        .evidence-type {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+    .scientific { background: var(--accent-red); }
+    .practitioner { background: var(--accent-yellow); color: var(--text-dark); }
+    .organizational { background: var(--accent-blue); }
+    .stakeholder { background: #8bd39a; }
+
+        .evidence-section {
+            margin: 40px 0;
+            padding: 25px;
+            border-left: 5px solid #ddd;
+            background: #fafafa;
+            border-radius: 10px;
+        }
+
+        .evidence-section h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        .evidence-section .content-file-preview {
+            margin: 15px 0;
+        }
+
+        .progress-indicator {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: linear-gradient(135deg, #f7faff, #eef5fb);
+            margin: 0;
+            border-bottom: 3px solid #dfeaf6;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+
+        .progress-step {
+            flex: 1;
+            text-align: center;
+            padding: 12px 8px;
+            margin: 0 5px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: all var(--transition-speed);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .progress-step.completed {
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-yellow));
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(11,61,46,0.08);
+        }
+
+        .progress-step.active {
+            background: linear-gradient(135deg, var(--accent-blue), #1b6aa0);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(10, 24, 40, 0.12);
+        }
+
+        .progress-step.pending {
+            background: #eaf3fb;
+            color: #0b2545;
+        }
+
+        .progress-step::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .progress-step.completed::after {
+            border-left-color: #6fb07f;
+        }
+
+        .progress-step.active::after {
+            border-left-color: var(--text-dark);
+        }
+
+        .progress-step.pending::after {
+            border-left-color: #eaf3fb;
+        }
+
+        .progress-step:last-child::after {
+            display: none;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--accent-yellow), var(--accent-red));
+            color: #071826;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all var(--transition-speed);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(10, 24, 40, 0.18);
+        }
+
+        .milestone-tracker {
+            background: #f7f9fc;
+            border-left: 4px solid var(--accent-yellow);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .milestone-tracker h4 {
+            color: #0b2545;
+            margin-bottom: 10px;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 5px 0;
+            color: #555;
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: var(--accent-yellow);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 My Evidence-Based Management Dashboard</h1>
+            <p>MGT357 - Fall 2025 | Portfolio Project</p>
+            
+            <div class="student-info">
+                <div><strong>Student:</strong> Isaac Duncan</div>
+                <div><strong>Problem Focus:</strong> <div Employee="" blowout=""></div></div>
+                <div><strong>Repository:</strong> <a href="#" style="color: #d4af37;">[Your GitHub Link]</a></div>
+                <div><strong>Last Updated:</strong> [Today's Date]</div>
+            </div>
+        </div>
+
+        <!-- Persistent Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="progress-step pending" onclick="showTab(1)">🎯 Framework</div>
+            <div class="progress-step pending" onclick="showTab(2)">🔍 Evidence</div>
+            <div class="progress-step pending" onclick="showTab(3)">⚖️ Synthesis</div>
+            <div class="progress-step pending" onclick="showTab(4)">🚀 Application</div>
+            <div class="progress-step pending" onclick="showTab(5)">📊 Assessment</div>
+        </div>
+
+        <div class="tab-container">
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-button active" onclick="showTab(1)">🎯 Problem & Solution Framework</button>
+                <button class="tab-button" onclick="showTab(2)">🔍 Evidence Hub</button>
+                <button class="tab-button" onclick="showTab(3)">⚖️ Aggregation</button>
+                <button class="tab-button" onclick="showTab(4)">🚀 Application</button>
+                <button class="tab-button" onclick="showTab(5)">📊 Assessment</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- TAB 1: Problem & Solution Framework -->
+                <div class="tab-panel active" id="tab-1">
+                    <h2>🎯 Problem & Solution Framework</h2>
+                    <p><strong>Following Module 2 Flowchart:</strong> Define the problem AND identify the preferred solution before collecting evidence.</p>
+                    
+                    <div class="milestone-tracker">
+                        <h4>📋 Milestone 1 Checklist (Due: Week 3)</h4>
+                        <ul class="checklist">
+                            <li>GitHub repository created and dashboard running</li>
+                            <li>Problem Definition completed using frameworks</li>
+                            <li>Stakeholder Analysis documented</li>
+                            <li>Success Criteria clearly defined</li>
+                            <li>Progress tracker updated</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flowchart-step">
+                        STEP 1: ASK - What is the assumed problem?
+                    </div>
+                    
+                    <div class="card-grid">
+                    <div class="content-file-preview" data-filename="ask-problem-definition.txt">
+                        <h4>📝 content/ask-problem-definition.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre id="problem-definition-content">Problem Focus: Employee blowout
+
+Short description:
+Employee blowout refers to frequent episodes of burnout, sudden resignations, and abrupt declines in productivity among staff caused by chronic workload imbalance, unclear role expectations, and insufficient support.
+
+Click View to open full content.</pre>
+                        <div class="card-actions">
+                            <button class="btn" onclick="viewFile(event, 'ask-problem-definition.txt')">View</button>
+                            <button class="btn" onclick="openContentFile('ask-problem-definition.txt')">Edit</button>
+                        </div>
+                    </div>
+
+                    <div class="content-file-preview" data-filename="ask-stakeholder-analysis.txt">
+                        <h4>📝 content/ask-stakeholder-analysis.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre id="stakeholder-analysis-content">Healthcare workers
+
+Interest: High — directly affected by workload and burnout.
+Influence: Medium — can shape pilot adoption and provide critical feedback.
+
+Click View to open full content.</pre>
+                        <div class="card-actions">
+                            <button class="btn" onclick="viewFile(event, 'ask-stakeholder-analysis.txt')">View</button>
+                            <button class="btn" onclick="openContentFile('ask-stakeholder-analysis.txt')">Edit</button>
+                        </div>
+                    </div>
+
+                    <div class="content-file-preview" data-filename="ask-success-criteria.txt">
+                        <h4>📝 content/ask-success-criteria.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre id="success-criteria-content">[This content will load from your .txt file]
+
+Define specific, measurable criteria for success.
+How will you know if your evidence-based solution worked?</pre>
+                        <div class="card-actions">
+                            <button class="btn" onclick="viewFile(event, 'ask-success-criteria.txt')">View</button>
+                            <button class="btn" onclick="openContentFile('ask-success-criteria.txt')">Edit</button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="flowchart-step">
+                        STEP 2: ASK - What is the evidence for the assumed problem?
+                    </div>
+
+                    <div class="flowchart-step">
+                        STEP 3: ASK - What is the preferred solution?
+                    </div>
+
+                    <div class="flowchart-step">
+                        STEP 4: ASK - What is the evidence for the preferred solution?
+                    </div>
+
+                    <p><strong>Next Phase:</strong> Now that we have our problem framework defined, we move to the Evidence Hub to systematically collect and evaluate evidence from all four sources to answer Steps 2 & 4.</p>
+                </div>
+
+                <!-- TAB 2: Evidence Hub -->
+                <div class="tab-panel" id="tab-2">
+                    <h2>🔍 Evidence Hub</h2>
+                    <p><strong>Purpose:</strong> Systematically collect and critically evaluate evidence from all four sources.</p>
+
+                    <div class="milestone-tracker">
+                        <h4>📋 Milestone 2 & 3 Checkpoints</h4>
+                        <ul class="checklist">
+                            <li><strong>Milestone 2 (Week 6):</strong> Scientific & Practitioner Evidence Complete</li>
+                            <li><strong>Milestone 3 (Week 9):</strong> Organizational & Stakeholder Evidence Complete</li>
+                            <li>All acquisition methods documented</li>
+                            <li>Evidence sources collected and organized</li>
+                            <li>Quality appraisals completed for each evidence type</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                        <h4>🎯 Evidence Collection Goals:</h4>
+                        <ul>
+                            <li><strong>For Step 2:</strong> What evidence supports our assumed problem?</li>
+                            <li><strong>For Step 4:</strong> What evidence supports our preferred solution?</li>
+                        </ul>
+                    </div>
+
+                    <!-- Scientific Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type scientific">🔬 Scientific Evidence</h3>
+                        
+                        <div class="content-file-preview" onclick="openContentFile('evidence-scientific-methods.txt')">
+                            <h4>📝 content/evidence-scientific-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Document your search strategy, databases used, keywords, and selection criteria]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-scientific-sources.txt')">
+                            <h4>📝 content/evidence-scientific-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[List and summarize the research studies, meta-analyses, and systematic reviews you found]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-scientific-appraisal.txt')">
+                            <h4>📝 content/evidence-scientific-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Evaluate the quality, reliability, and relevance of your scientific evidence]</pre>
+                        </div>
+                        
+                        <div class="content-file-preview" onclick="openContentFile('keywords.html')">
+                            <h4>📝 content/keywords.html</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre id="keywords-content">[Primary keywords table will load here]</pre>
+                        </div>
+                    </div>
+
+                    <!-- Practitioner Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type practitioner">👔 Practitioner Evidence</h3>
+                        
+                        <div class="content-file-preview" onclick="openContentFile('evidence-practitioner-methods.txt')">
+                            <h4>📝 content/evidence-practitioner-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Document how you collected practitioner insights, interviews, case studies]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-practitioner-sources.txt')">
+                            <h4>📝 content/evidence-practitioner-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Summarize expert interviews, case studies, and professional experience]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-practitioner-appraisal.txt')">
+                            <h4>📝 content/evidence-practitioner-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Assess the credibility and relevance of practitioner evidence]</pre>
+                        </div>
+                    </div>
+
+                    <!-- Organizational Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type organizational">🏢 Organizational Evidence</h3>
+                        
+                        <div class="content-file-preview" onclick="openContentFile('evidence-organizational-methods.txt')">
+                            <h4>📝 content/evidence-organizational-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Document internal data collection methods and sources]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-organizational-sources.txt')">
+                            <h4>📝 content/evidence-organizational-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Present internal data, KPIs, reports, and organizational studies]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-organizational-appraisal.txt')">
+                            <h4>📝 content/evidence-organizational-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Evaluate the quality and limitations of organizational data]</pre>
+                        </div>
+                    </div>
+
+                    <!-- Stakeholder Evidence Section -->
+                    <div class="evidence-section">
+                        <h3 class="evidence-type stakeholder">👥 Stakeholder Evidence</h3>
+                        
+                        <div class="content-file-preview" onclick="openContentFile('evidence-stakeholder-methods.txt')">
+                            <h4>📝 content/evidence-stakeholder-methods.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Document stakeholder engagement methods, surveys, interviews]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-stakeholder-sources.txt')">
+                            <h4>📝 content/evidence-stakeholder-sources.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Summarize stakeholder feedback, surveys, and input]</pre>
+                        </div>
+
+                        <div class="content-file-preview" onclick="openContentFile('evidence-stakeholder-appraisal.txt')">
+                            <h4>📝 content/evidence-stakeholder-appraisal.txt</h4>
+                            <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                            <pre>[Assess the representativeness and reliability of stakeholder evidence]</pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: Aggregation -->
+                <div class="tab-panel" id="tab-3">
+                    <h2>⚖️ Evidence Aggregation</h2>
+                    <p><strong>Synthesis Process:</strong> Weigh and combine evidence from multiple sources to form conclusions.</p>
+
+                    <div class="milestone-tracker">
+                        <h4>📋 Milestone 4 Checkpoint (Week 12)</h4>
+                        <ul class="checklist">
+                            <li>Evidence synthesis across all four types completed</li>
+                            <li>Solution design based on evidence analysis</li>
+                            <li>Implementation plan developed</li>
+                            <li>Risk assessment and mitigation strategies</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-file-preview" onclick="openContentFile('synthesis-integration.txt')">
+                        <h4>📝 content/synthesis-integration.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre id="evidence-synthesis-content">[Synthesize evidence from all four sources to reach evidence-based conclusions]
+
+Document areas of agreement, disagreement, and evidence quality.
+Weight the evidence and form recommendations.</pre>
+                    </div>
+                </div>
+
+                <!-- TAB 4: Application -->
+                <div class="tab-panel" id="tab-4">
+                    <h2>🚀 Application</h2>
+                    <p><strong>Implementation Planning:</strong> Put the evidence-based solution into practice.</p>
+
+                    <div class="content-file-preview" onclick="openContentFile('application-implementation.txt')">
+                        <h4>📝 content/application-implementation.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre>[Create detailed implementation plan with timeline, resources, and stakeholder communication]</pre>
+                    </div>
+                </div>
+
+                <!-- TAB 5: Assessment -->
+                <div class="tab-panel" id="tab-5">
+                    <h2>📊 Assessment</h2>
+                    <p><strong>Continuous Improvement:</strong> Evaluate results and refine the approach.</p>
+
+                    <div class="milestone-tracker">
+                        <h4>📋 Final Submission Checklist (Week 16)</h4>
+                        <ul class="checklist">
+                            <li>Assessment framework completed</li>
+                            <li>Lessons learned documented</li>
+                            <li>Dashboard polished for portfolio</li>
+                            <li>Peer review feedback incorporated</li>
+                            <li>Final reflection on EBM process</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-file-preview" onclick="openContentFile('assessment-monitoring.txt')">
+                        <h4>📝 content/assessment-monitoring.txt</h4>
+                        <div class="edit-notice">🖊️ Click to edit this file in VS Code</div>
+                        <pre>[Evaluate the effectiveness of your EBM process and solution]</pre>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <h3>🎉 EBM Cycle Complete!</h3>
+                        <p>Congratulations! You've built a professional Evidence-Based Management dashboard.</p>
+                        <div>
+                            <button class="btn" onclick="window.open('PROJECT_TRACKER.md')">📊 View Project Tracker</button>
+                            <button class="btn" onclick="showTab(1)">↻ Review Complete Process</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Content file loading functionality
+        function loadContentFiles() {
+            // This function would load content from .txt files
+            // For now, it shows placeholder content
+            console.log('Content files would be loaded here');
+        }
+
+        // Function to simulate opening content files in VS Code
+        function openContentFile(filename) {
+            alert(`In VS Code, you would open: content/${filename}\n\nThis is where you'll edit your content. Use GitHub Copilot to help with writing and organization!`);
+        }
+
+        // Tab Navigation Functionality
+        function showTab(tabNumber) {
+            // Hide all tab panels
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+            
+            // Remove active class from all tab buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Show the selected tab panel
+            document.getElementById(`tab-${tabNumber}`).classList.add('active');
+            
+            // Add active class to the clicked button
+            buttons[tabNumber - 1].classList.add('active');
+            
+            // Update progress indicator
+            updateProgressIndicator(tabNumber);
+        }
+        
+        // Update Progress Indicator based on current tab
+        function updateProgressIndicator(currentTab) {
+            const progressSteps = document.querySelectorAll('.progress-step');
+            
+            progressSteps.forEach((step, index) => {
+                step.classList.remove('completed', 'active', 'pending');
+                
+                if (index + 1 < currentTab) {
+                    step.classList.add('completed');
+                } else if (index + 1 === currentTab) {
+                    step.classList.add('active');
+                } else {
+                    step.classList.add('pending');
+                }
+            });
+        }
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            loadContentFiles();
+            updateProgressIndicator(1);
+        });
+    </script>
+    <!-- Modal overlay for viewing full file content -->
+    <div class="modal-overlay" id="file-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="modal-filename">File</h3>
+                <div>
+                    <button class="btn" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <pre id="modal-pre" style="white-space: pre-wrap; font-family: inherit; line-height:1.6;"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Open modal and display full file content. event is from button click to stop propagation.
+        function viewFile(event, filename) {
+            event.stopPropagation();
+            const modal = document.getElementById('file-modal');
+            const pre = document.getElementById('modal-pre');
+            const title = document.getElementById('modal-filename');
+
+            // Attempt to find loaded content in the page first
+            const container = document.querySelector(`[data-filename="${filename}"]`);
+            let content = '';
+            if (container) {
+                const innerPre = container.querySelector('pre');
+                if (innerPre) {
+                    content = innerPre.textContent || innerPre.innerText || '';
+                }
+            }
+
+            // Fallback: fetch directly from file
+            if (!content) {
+                fetch(`content/${filename}`).then(r => r.text()).then(text => {
+                    pre.textContent = text;
+                    title.textContent = filename;
+                    modal.classList.add('active');
+                }).catch(err => {
+                    pre.textContent = 'Unable to load file: ' + err.message;
+                    title.textContent = filename;
+                    modal.classList.add('active');
+                });
+                return;
+            }
+
+            pre.textContent = content;
+            title.textContent = filename;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('file-modal').classList.remove('active');
+        }
+    </script>
+    <script src="content-loader.js"></script>
+</body>
+</html>

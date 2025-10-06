@@ -1,0 +1,203 @@
+# Scientific Evidence: Research Findings
+# Document and summarize the research studies you found
+
+## Evidence Summary Overview
+**Total Studies Reviewed:** [Number]
+**Date Range of Studies:** [Earliest to most recent]
+**Geographic Scope:** [Countries/regions represented]
+**Quality Level:** [Overall assessment: High/Medium/Low]
+
+## Evidence Summary — key studies (fill PMIDs from PubMed export)
+> NOTE: Replace [PMID] with the PubMed ID from your export for each study.
+
+### Study A — Systematic review of physician burnout
+- Citation (sample): Rotenstein LS, Torre M, Ramos MA, et al. Prevalence of burnout among physicians: a systematic review. JAMA. 2018;319(5):[page range].
+- PMID: [PMID]
+- Why selected: High-quality systematic review summarizing prevalence studies across countries and specialties; useful for understanding measurement heterogeneity.
+- Key findings (summary): Review reports widely variable prevalence estimates across studies, largely due to differences in instruments and cut-offs; highlights need for standardized measurement when comparing prevalence.
+- Relevance to our problem: Demonstrates prevalence uncertainty but confirms burnout is common among healthcare professionals.
+
+### Study B — Instrument development / validation (MBI)
+- Citation (sample): Maslach C, Jackson SE. The measurement of experienced burnout. J Occup Behav. 1981;2(2):[page range].
+- PMID: [PMID]
+- Why selected: Foundational paper describing the Maslach Burnout Inventory (MBI) — the most commonly used instrument in clinical and occupational research.
+- Key findings (summary): Describes the three core dimensions (emotional exhaustion, depersonalization, reduced personal accomplishment) and psychometric properties of the MBI.
+- Relevance: Use MBI scores as primary outcome or to map other instruments to a common framework.
+
+### Study C — Instrument development (Copenhagen Burnout Inventory)
+- Citation (sample): Kristensen TS, Borritz M, Villadsen E, Christensen KB. The Copenhagen Burnout Inventory: a new tool for the assessment of burnout. Work & Stress. 2005;19(3):[page range].
+- PMID: [PMID]
+- Why selected: Alternative validated instrument that separates personal, work-related, and client-related burnout.
+- Key findings (summary): Presents psychometrics for the CBI and example scoring, useful when studies use different instruments.
+- Relevance: Provides a cross-walk for studies using CBI vs MBI.
+
+### Study D — Interventions systematic review (organizational vs individual)
+- Citation (placeholder): [Author list]. Systematic review/meta-analysis of interventions to reduce burnout among healthcare professionals. [Journal]. [Year].
+- PMID: [PMID]
+- Why selected: Compares effectiveness of organizational-level vs individual-level interventions (workload redesign, staffing, schedule changes, vs mindfulness, CBT, resilience training).
+- Key findings (summary): Evidence typically shows organizational interventions (workload/staffing/role redesign) produce larger and more sustained reductions in burnout than individual-level approaches alone; however, high heterogeneity and risk of bias exist across trials.
+- Relevance: Directly informs intervention selection for your measurement framework (prioritize organizational fixes where feasible).
+
+### Study E — Recent large cohort / prevalence study (example)
+- Citation (placeholder): [Author]. Prevalence and predictors of burnout among [profession] in [country]. [Journal]. [Year].
+- PMID: [PMID]
+- Why selected: Provides recent, context-specific prevalence estimates and identifies local risk factors (e.g., shift length, staffing ratios).
+- Key findings (summary): Typical predictors include high workload, low control, low rewards, lack of social support, and poor psychological safety.
+- Relevance: Use these predictors to refine local monitoring and interventions.
+
+---
+
+## How to complete this page with exact PubMed results
+1. Run the PubMed searches from `evidence-scientific-methods.txt` and export CSV with PMIDs.
+2. Replace each [PMID] above and paste the full citation line (or let me fill it if you paste the CSV or PMIDs here).
+3. For each study you want included, paste the abstract or PMID and I will extract the Study Overview, Key Findings, and Relevance fields into this file.
+
+## Study 1: [Title or Brief Description]
+### Citation
+[Full academic citation in APA format]
+
+### Study Overview
+- **Research Design:** [Type of study - RCT, cohort, cross-sectional, etc.]
+- **Sample Size:** [Number of participants/organizations]
+- **Population:** [Who was studied?]
+- **Setting:** [Where was the study conducted?]
+- **Duration:** [How long was the study period?]
+
+### Key Findings
+#### Related to Your Problem
+[What did this study find about your type of problem?]
+
+#### Related to Your Solution
+[What did this study find about your type of solution?]
+
+#### Important Statistics/Results
+[Specific numbers, effect sizes, confidence intervals]
+
+### Relevance Assessment
+- **Problem Relevance:** [High/Medium/Low - why?]
+- **Solution Relevance:** [High/Medium/Low - why?]
+- **Context Similarity:** [How similar to your situation?]
+
+---
+
+## Study 2: [Title or Brief Description]
+### Citation
+[Full academic citation in APA format]
+
+### Study Overview
+- **Research Design:** [Type of study]
+- **Sample Size:** [Number of participants/organizations]
+- **Population:** [Who was studied?]
+- **Setting:** [Where was the study conducted?]
+- **Duration:** [How long was the study period?]
+
+### Key Findings
+#### Related to Your Problem
+[What did this study find about your type of problem?]
+
+#### Related to Your Solution
+[What did this study find about your type of solution?]
+
+#### Important Statistics/Results
+[Specific numbers, effect sizes, confidence intervals]
+
+### Relevance Assessment
+- **Problem Relevance:** [High/Medium/Low - why?]
+- **Solution Relevance:** [High/Medium/Low - why?]
+- **Context Similarity:** [How similar to your situation?]
+
+---
+
+## Study 3: [Title or Brief Description]
+### Citation
+[Full academic citation in APA format]
+
+### Study Overview
+- **Research Design:** [Type of study]
+- **Sample Size:** [Number of participants/organizations]
+- **Population:** [Who was studied?]
+- **Setting:** [Where was the study conducted?]
+- **Duration:** [How long was the study period?]
+
+### Key Findings
+#### Related to Your Problem
+[What did this study find about your type of problem?]
+
+#### Related to Your Solution
+[What did this study find about your type of solution?]
+
+#### Important Statistics/Results
+[Specific numbers, effect sizes, confidence intervals]
+
+### Relevance Assessment
+- **Problem Relevance:** [High/Medium/Low - why?]
+- **Solution Relevance:** [High/Medium/Low - why?]
+- **Context Similarity:** [How similar to your situation?]
+
+---
+
+## Additional Studies Summary
+[For studies 4+, you can use shorter summaries]
+
+### Study 4: [Brief title]
+- **Citation:** [Short citation]
+- **Key Finding:** [Most important result]
+- **Relevance:** [Why this matters to your problem/solution]
+
+### Study 5: [Brief title]
+- **Citation:** [Short citation]
+- **Key Finding:** [Most important result]
+- **Relevance:** [Why this matters to your problem/solution]
+
+## Cross-Study Analysis
+
+### Consistent Findings
+[What do multiple studies agree on?]
+
+#### About the Problem
+[Common findings about your type of problem]
+
+#### About Solutions
+[Common findings about effective solutions]
+
+### Conflicting Evidence
+[Where do studies disagree?]
+
+#### Nature of Conflicts
+[What are the disagreements about?]
+
+#### Possible Explanations
+[Why might studies disagree?]
+
+### Evidence Gaps
+[What questions remain unanswered by current research?]
+
+## Synthesis for Decision Making
+
+### Strength of Evidence
+**For Problem Existence:** [Strong/Moderate/Weak evidence]
+**For Solution Effectiveness:** [Strong/Moderate/Weak evidence]
+
+### Key Insights for Your Situation
+[What does the research collectively tell you?]
+
+#### Problem-Related Insights
+[What research says about your problem]
+
+#### Solution-Related Insights
+[What research says about your proposed solution]
+
+#### Implementation Considerations
+[What research suggests about how to implement]
+
+### Research-Based Recommendations
+[What does the scientific evidence suggest you should do?]
+
+---
+INSTRUCTIONS:
+1. Include at least 3-5 high-quality studies
+2. Focus on findings most relevant to your specific problem and solution
+3. Be objective - include both supportive and challenging evidence
+4. Use proper academic citations
+5. Connect findings back to your specific management problem
+6. Don't just summarize - analyze and synthesize across studies

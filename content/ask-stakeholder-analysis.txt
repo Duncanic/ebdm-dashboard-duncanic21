@@ -1,0 +1,81 @@
+# Stakeholder Analysis
+# Identify and analyze all parties affected by your problem and solution
+
+## Internal Stakeholders
+
+# Stakeholder Analysis — Employee Burnout
+This framework outlines key stakeholders involved in addressing employee burnout (or "employee blowout"). Use it as a template, substituting bracketed notes with details specific to your organization as you develop, test, and expand your burnout interventions.
+
+## Internal Stakeholders
+
+### Employees
+- **Role & Size:** Nurses, care staff, operations staff — frontline personnel directly delivering services (approx. N).
+- **Interest in Problem:** Very high. They experience workload stress, emotional exhaustion, and may have reduced capacity to maintain service standards.
+- **Potential Concerns:** Stigma about reporting burnout, fear of reprisal, job insecurity, workload redistribution.
+- **Influence Level:** Medium — they can make pilots work (or fail) through participation and uptake; limited budget authority.
+- **Support Level:** High if interventions reduce workload and provide tangible support (flexible scheduling, access to counseling, manager coaching).
+
+### Middle Management / Team Leads
+- **Role & Size:** Supervisors and front-line managers responsible for daily resourcing and team workload.
+- **Interest in Problem:** High — they manage performance and staffing shortfalls directly.
+- **Influence Level:** High — control day-to-day implementation and can enable or block pilots.
+- **Support Level:** Mixed — support likely if solutions are practical and accompanied by training and autonomy.
+
+### Senior Management / Executives
+- **Role & Size:** HR leaders, operations VP, CFO, CEO.
+- **Interest in Problem:** Medium to high, depending on visibility of turnover and cost impacts.
+- **Influence Level:** Very high — approve budgets and organizational changes.
+- **Support Level:** Conditional — more likely to support if ROI (turnover reduction, service stability) is clear.
+
+### Human Resources
+- **Role & Size:** HR business partners and occupational health teams.
+- **Interest in Problem:** High — responsible for retention, absence management, and well-being programs.
+- **Influence Level:** High — can design programs and measure HR metrics.
+- **Support Level:** Likely supportive; will require evidence and clear evaluation metrics.
+
+### Other Internal Groups (IT, Finance, Legal)
+- **Interest & Support:** Provide enabling services (data access, budget sign-off, legal compliance). Influence varies by function; include early to avoid implementation blockers.
+
+## External Stakeholders
+
+### Customers / Patients
+- **Interest in Problem:** Indirect — service quality may decline with staff burnout.
+- **Influence Level:** Medium — feedback and complaints can drive management attention.
+
+### Regulatory Bodies / Accreditation
+- **Interest in Problem:** Compliance with workforce safety and care standards.
+- **Influence Level:** High where regulations require safe staffing and worker protections.
+
+### Community & Professional Bodies
+- **Interest in Problem:** Advocacy groups, unions, and professional associations may influence best-practice adoption and provide resources.
+
+## Stakeholder Mapping (Suggested)
+- High Influence / High Interest: Senior Management, HR, Middle Management — engage closely, secure budget and metrics.
+- High Influence / Low Interest: Finance, Legal — keep satisfied; secure necessary approvals.
+- Low Influence / High Interest: Frontline staff, trade unions — keep informed, involve in pilots and feedback loops.
+- Low Influence / Low Interest: Peripheral partners — monitor.
+
+## Engagement & Evidence Collection Plan
+
+Weeks 1–2: Develop data collection tools (survey questions, interview guides).
+Weeks 3–6: Collect survey data and conduct interviews/focus groups with employees.
+Weeks 7–8: Engage administrators and managers for organizational data and policy review.
+Weeks 9–10: Review secondary evidence and literature for comparison.
+Weeks 11–12: Analyze data, identify themes, and synthesize findings.
+
+## Recommended Interview / Survey Questions (examples)
+- Can you describe a recent time you felt overwhelmed at work? What were the main contributors?
+- How predictable is your workload week-to-week? Do you feel you have control over your schedule?
+- What support from your manager or organization would make the biggest difference?
+- Have you considered leaving your role because of workload or stress? If so, what pushed you toward that decision?
+
+## Risks & Mitigations
+- Risk: Low survey response or reporting bias. Mitigation: anonymize responses and communicate confidentiality.
+- Risk: Managers perceive interventions as adding work. Mitigation: include manager training and show time-savings evidence.
+
+## Quick Actions / Next Steps
+1. Pull HR metrics and run a 2-week pulse survey.
+2. Recruit pilot team and schedule manager training session.
+3. Define success metrics and pre-register evaluation plan.
+
+

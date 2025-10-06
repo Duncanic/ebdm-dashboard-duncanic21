@@ -1,0 +1,225 @@
+# Scientific Evidence: Quality Appraisal
+# Critically evaluate the trustworthiness and relevance of your research evidence
+
+## Overall Evidence Quality Rating (summary)
+- Rating: Moderate
+- Confidence level: Moderate
+- Rationale: There are multiple high-quality systematic reviews and validated measurement instruments (MBI, CBI) supporting the existence and measurement of burnout. However, primary-study heterogeneity (different instruments, cut-offs, cross-sectional designs) and variable risk of bias reduce confidence in pooled prevalence or single-study effect estimates. Intervention studies are promising for organizational changes but are often small, non-randomized, or short-duration.
+
+## Appraisal checklist (how to score an individual study)
+Use a simple 7-point checklist. Score 0 (poor) to 2 (good) per item and sum to get a 0–14 score.
+1. Study design appropriateness (2 = RCT or high-quality cohort; 1 = quasi-experimental; 0 = cross-sectional/case series)
+2. Sample size and representativeness (2 = large, representative; 1 = moderate; 0 = small, convenience sample)
+3. Measurement validity (2 = validated instrument like MBI/CBI; 1 = adapted instrument; 0 = unvalidated self-report)
+4. Statistical analysis and reporting (2 = appropriate analysis with CIs/p-values; 1 = basic analysis; 0 = poor reporting)
+5. Confounding control (2 = adjusted for key confounders; 1 = partial; 0 = none)
+6. Follow-up duration and completeness (2 = sufficient follow-up with low attrition; 1 = short/partial; 0 = cross-sectional/no follow-up)
+7. Funding/COI transparency (2 = declared and low risk; 1 = declared with moderate risk; 0 = undeclared/high risk)
+
+## Interpreting study scores
+- 11–14: High quality — strong internal validity and reliable for decision-making
+- 7–10: Moderate quality — informative but interpret with caution
+- 0–6: Low quality — supportive evidence only, do not base major decisions on these alone
+
+## Example appraisal entries (fill [PMID] and study-specific numbers)
+### [PMID] — Rotenstein et al. (systematic review)
+- Design: Systematic review/meta-analysis — score 2
+- Sample size/representativeness: Large number of included studies — score 2
+- Measurement validity: Heterogeneous measurement approaches across included studies — score 1
+- Statistical analysis: Meta-analytic methods used but heterogeneity high — score 1
+- Confounding control: N/A for systematic review (report descriptive) — score 1
+- Follow-up: N/A — score 1
+- Funding/COI: Declared — score 2
+- Total: 10 (Moderate quality)
+
+### [PMID] — Example intervention RCT
+- Design: RCT — 2
+- Sample size: Moderate — 1
+- Measurement: Validated instrument (MBI) — 2
+- Analysis: Appropriate, ITT reported — 2
+- Confounding: Randomization balanced covariates — 2
+- Follow-up: 6 months, low attrition — 2
+- Funding/COI: Declared (non-industry) — 2
+- Total: 13 (High quality)
+
+## Synthesis guidance for decision makers
+- Prioritize high-quality RCTs and well-conducted quasi-experimental studies when choosing interventions.
+- For prevalence and problem framing, rely on systematic reviews but be explicit about measurement heterogeneity.
+- Where only low-quality evidence exists, plan small-scale pilots with strong measurement and evaluation before scaling.
+
+## Next steps to finalize appraisal
+1. Paste the list of PMIDs you exported from PubMed here (or upload the CSV).
+2. I will auto-fill the appraisal scores for each study and compute summary statistics (median quality, distribution across study types).
+
+## Individual Study Quality Assessment
+
+### Study 1: [Brief title/identifier]
+#### Methodological Quality
+- **Study Design Appropriateness:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Sample Size Adequacy:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Measurement Validity:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Statistical Analysis:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+
+#### Risk of Bias Assessment
+- **Selection Bias:** [Low/Medium/High risk]
+- **Information Bias:** [Low/Medium/High risk]
+- **Confounding:** [Well controlled/Partially controlled/Poorly controlled]
+- **Reporting Bias:** [Low/Medium/High risk]
+
+#### External Validity
+- **Population Generalizability:** [High/Medium/Low]
+  - *Reasoning:* [How similar is study population to your context?]
+- **Setting Generalizability:** [High/Medium/Low]
+  - *Reasoning:* [How similar is study setting to your context?]
+- **Time Relevance:** [High/Medium/Low]
+  - *Reasoning:* [How current/relevant is this research?]
+
+---
+
+### Study 2: [Brief title/identifier]
+#### Methodological Quality
+- **Study Design Appropriateness:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Sample Size Adequacy:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Measurement Validity:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Statistical Analysis:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+
+#### Risk of Bias Assessment
+- **Selection Bias:** [Low/Medium/High risk]
+- **Information Bias:** [Low/Medium/High risk]
+- **Confounding:** [Well controlled/Partially controlled/Poorly controlled]
+- **Reporting Bias:** [Low/Medium/High risk]
+
+#### External Validity
+- **Population Generalizability:** [High/Medium/Low]
+  - *Reasoning:* [How similar is study population to your context?]
+- **Setting Generalizability:** [High/Medium/Low]
+  - *Reasoning:* [How similar is study setting to your context?]
+- **Time Relevance:** [High/Medium/Low]
+  - *Reasoning:* [How current/relevant is this research?]
+
+---
+
+### Study 3: [Brief title/identifier]
+#### Methodological Quality
+- **Study Design Appropriateness:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Sample Size Adequacy:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Measurement Validity:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+- **Statistical Analysis:** [Excellent/Good/Fair/Poor]
+  - *Justification:* [Why this rating?]
+
+#### Risk of Bias Assessment
+- **Selection Bias:** [Low/Medium/High risk]
+- **Information Bias:** [Low/Medium/High risk]
+- **Confounding:** [Well controlled/Partially controlled/Poorly controlled]
+- **Reporting Bias:** [Low/Medium/High risk]
+
+#### External Validity
+- **Population Generalizability:** [High/Medium/Low]
+  - *Reasoning:* [How similar is study population to your context?]
+- **Setting Generalizability:** [High/Medium/Low]
+  - *Reasoning:* [How similar is study setting to your context?]
+- **Time Relevance:** [High/Medium/Low]
+  - *Reasoning:* [How current/relevant is this research?]
+
+## Publication Quality Assessment
+
+### Journal Quality
+[Evaluate the quality of journals where studies were published]
+
+#### High-Quality Journals
+[List studies published in top-tier journals]
+
+#### Medium-Quality Journals
+[List studies from reputable but not top-tier journals]
+
+#### Lower-Quality or Predatory Journals
+[Any concerns about publication quality?]
+
+### Peer Review Process
+- **Clear Peer Review:** [Evidence of rigorous peer review process]
+- **Editorial Standards:** [Quality of editorial oversight]
+- **Impact Factor/Citations:** [Journal reputation indicators]
+
+## Systematic Biases and Limitations
+
+### Publication Bias
+[Are positive results more likely to be published in this area?]
+
+### Geographic Bias
+[Are studies mainly from certain countries/regions?]
+
+### Industry Bias
+[Are studies funded by interested parties?]
+
+### Temporal Bias
+[Are findings time-sensitive or context-dependent?]
+
+## Evidence Strength Assessment
+
+### Quantity of Evidence
+- **Number of Studies:** [Sufficient/Limited evidence]
+- **Total Sample Size:** [Adequate/Inadequate for conclusions]
+- **Study Duration:** [Long enough to detect effects?]
+
+### Quality of Evidence
+- **Overall Methodological Rigor:** [High/Medium/Low]
+- **Consistency Across Studies:** [High/Medium/Low consistency]
+- **Effect Size Magnitude:** [Large/Medium/Small effects]
+
+### Relevance to Your Context
+- **Population Match:** [How well do study populations match your context?]
+- **Intervention Similarity:** [How similar are studied interventions to your solution?]
+- **Outcome Relevance:** [How relevant are study outcomes to your success criteria?]
+
+## Confidence in Evidence
+
+### For Problem Definition
+- **Evidence Strength:** [Strong/Moderate/Weak]
+- **Confidence Level:** [High/Medium/Low confidence]
+- **Key Limitations:** [What reduces your confidence?]
+
+### For Solution Effectiveness
+- **Evidence Strength:** [Strong/Moderate/Weak]
+- **Confidence Level:** [High/Medium/Low confidence]
+- **Key Limitations:** [What reduces your confidence?]
+
+## Research Gaps and Future Needs
+
+### Critical Evidence Gaps
+[What important questions remain unanswered?]
+
+### Context-Specific Research Needs
+[What research would be most valuable for your specific situation?]
+
+### Methodological Improvements Needed
+[What would make future research more useful?]
+
+## Implications for Decision Making
+
+### How to Weight Scientific Evidence
+[How much should scientific evidence influence your decision?]
+
+### Evidence-Based Recommendations
+[What does the research clearly support or contradict?]
+
+### Areas Requiring Other Evidence Types
+[Where is scientific evidence insufficient and other evidence crucial?]
+
+---
+INSTRUCTIONS:
+1. Be honest about study limitations - don't oversell weak evidence
+2. Consider both internal validity (study quality) and external validity (generalizability)
+3. Look for patterns across studies, not just individual study quality
+4. Consider what evidence is missing, not just what's available
+5. Connect quality assessment back to your specific decision-making needs

@@ -1,0 +1,172 @@
+# Success Criteria Definition
+# Define specific, measurable criteria to evaluate solution effectiveness
+
+## SMART Success Criteria
+
+### Criterion 1: Professional development opportunities
+- **Specific:** Offer training opportunities for employees
+- **Measurable:** Ensure over 70% of staff participate in training opportunities
+- **Achievable:** Incorporate local universities to reduce costs
+- **Relevant:** Growth opportunites can lead to an increase in retention
+- **Time-bound:** By the next fiscal year
+
+### Criterion 2: Increase employee recognition
+- **Specific:** Allow employees to nominate coworkers periodically for their contributions
+- **Measurable:** Try to obtain atleast 15 submission per month
+- **Achievable:** Utilize builitin boards and send out emails
+- **Relevant:** Recgonition can lead to an increase in job loyalty and satisfaction
+- **Time-bound:** Allow submissions within 2 months and review the outcome after 6 months
+
+### Criterion 3: Longer breaks
+- **Specific:** Ensure all nurses and healthcare staff get an uniterrupted 60-minute break per 12 hour shift/ 45-minute per 8 hour shift
+- **Measurable:** Track compliance through scheduling software and manager check-ins
+- **Achievable:** Adjust shift coverage to allow for breaks without affecting patient care
+- **Relevant:** Reduces fatigue and burnout
+- **Time-bound:** implement within 3 months and evaluate after 6 months
+
+## Measurement Framework
+### Quantitative Metrics
+
+Patient outcomes (readmission rates, length of stay, mortality rates).
+Patient satisfaction scores (HCAHPS or internal surveys).
+Retention rates (percentage of employees staying >1 year).
+Utilization of support resources (EAP counseling sessions, wellness program participation).
+Employee engagement survey scores (job satisfaction, organizational commitment).
+Overtime hours logged per employee.
+Healthcare costs related to turnover (recruitment, training, temporary staff).
+
+### Qualitative Indicators
+
+Personal coping strategies staff use to manage stress.
+Feedback on wellness programs (What works? What feels ineffective?).
+Perceived barriers to reducing burnout (e.g., limited staff, lack of resources, culture of overwork).
+Leadership perspectives on retention challenges and solutions.
+Suggestions from employees on what organizational changes would help most.
+Stories of positive engagement (examples where support improved morale).
+
+### Leading vs. Lagging Indicators
+
+Leading indicators (early signals)
+- Manager training completion rate (%) in target units.
+- Participation rate in flexible scheduling pilot (% of eligible staff opting in).
+- Pulse survey response rate and early change in intent‑to‑stay (monthly/quarterly).
+
+Lagging indicators (final outcomes)
+- 12‑month voluntary turnover rate and burnout prevalence; mean sick‑leave days per employee at 12 months.
+
+## Baseline Measurements
+
+### Current State Metrics (example template)
+- Baseline period: previous 12 months (adjust if seasonality is present).
+- Metric A — Overall burnout among healthcare workers: 50% reported feeling burned out in the past month in 2023 (down from ~54% in 2022)
+- Metric B — RN to patient ratio in Virginia: Approx. 10.5 RNs per 1,000 patients
+- Metric C — Burnout among VA primary care workers: ~35-42% from 2017-2020; 1-year turnover intention ~31-34%
+
+
+### Data Collection Plan
+
+- Source systems: HRIS / Payroll (sick days, leavers), LMS or training logs (manager training), Survey platform (Qualtrics/Google Forms), exit interview notes (HR), operational dashboards (workload metrics).
+- Frequency: sick‑leave and turnover (monthly extracts; aggregate quarterly), burnout survey (baseline, 6‑month, 12‑month), pulse items (monthly/quarterly).
+- Responsible: HR data analyst (extracts and anonymizes), People Analytics (calculates rates), Project lead (interprets findings). Document extraction SQL or column mappings in a data dictionary.
+
+## Success Thresholds
+
+Minimum Acceptable Improvement (floor)
+- Sick days: 10% relative reduction at 12 months vs. baseline.
+- Turnover: 5% relative reduction at 12 months.
+- Burnout prevalence: 10% relative reduction at 12 months.
+
+Target Performance Level (primary goals)
+- Sick days: 25% relative reduction at 12 months (primary target for pilot units).
+- Turnover: 15% relative reduction at 12 months.
+- Burnout prevalence: 20% relative reduction at 12 months.
+
+Stretch Goal (exceptional)
+- Sick days: 40% relative reduction; Turnover: 25% reduction; Burnout: 30% reduction.
+
+## Stakeholder‑Specific Success Criteria
+
+Management (senior leadership)
+- Demonstrable ROI: reduction in annual recruitment costs and improved service continuity (show cost estimate and approval to scale).
+
+Employees (staff)
+- Improved self‑reported wellbeing and intent‑to‑stay; qualitative reports of better workload fairness.
+
+Customers / Service quality
+- No deterioration in service KPIs (e.g., average time to resolution) while interventions are piloted; ideally a small improvement.
+
+## Risk Indicators
+
+Red flags (early warning signs)
+- No reduction or an increase in sick‑leave or turnover after 6 months.
+- Low participation in manager training (<50%) or pilot interventions (<30%).
+- Sharp drop in pulse survey response rate (<25%), indicating engagement problems.
+
+Mitigation triggers
+- If red flags appear at interim review (6 months), pause scaling; run targeted qualitative interviews to understand causes; adjust intervention fidelity and manager support.
+
+## Timeline for Assessment
+
+Short‑term (30–90 days)
+- Deliver manager training to pilot teams; collect baseline HR metrics and run a short pulse survey.
+
+Medium‑term (3–6 months)
+- Complete pilot implementation; monitor leading indicators (training completion, pilot participation); run 6‑month burnout survey and interim data checks.
+
+Long‑term (6–12 months)
+- Primary outcome evaluation at 12 months (sick days, turnover, burnout prevalence) with cost impact estimation and recommendation on scale‑up.
+
+## Reporting Framework
+
+Dashboard metrics (to display on this dashboard)
+- Mean sick days per employee (quarterly)
+- Voluntary turnover rate (12‑month rolling)
+- Burnout prevalence (%) (baseline / 6m / 12m)
+- Intent‑to‑stay (% agree)
+- Manager training completion (%) and pilot participation (%)
+
+Regular reports
+- Monthly: Leading indicators summary (training completion, participation, pulse highlights) — circulated to project team and HR.
+- Quarterly: Dashboard update with quantitative metrics and key qualitative themes — circulated to sponsors and stakeholders.
+- 6‑month interim report: progress vs. thresholds, recommended adjustments.
+- 12‑month final report: primary outcomes, cost impact, and scale‑up decision.
+
+Milestone reviews
+- Week 8: Data & pilot readiness review.
+- Month 3: Early check; ensure data flow and initial engagement.
+- Month 6: Interim assessment; trigger mitigation if red flags.
+- Month 12: Final evaluation and decision on scale.
+
+## Calculation Examples & Quick Formulas
+
+Excel / Spreadsheet formulas
+- Mean sick days per employee (unit-level): =SUM(sick_days_range)/COUNT(unique_employee_ids)
+- Voluntary turnover (%): =(COUNTIFS(leavers_range, "Voluntary", leavers_date_range, ">" & start_date, leavers_date_range, "<=" & end_date) / average_headcount) * 100
+
+SQL example (simplified)
+-- Mean sick days per employee in target unit (last 12 months)
+SELECT unit_id,
+			 SUM(sick_days) / COUNT(DISTINCT employee_id) AS mean_sick_days
+FROM hr_absence
+WHERE absence_date BETWEEN '2024-09-22' AND '2025-09-21'
+	AND unit_id IN ('unitA','unitB')
+GROUP BY unit_id;
+
+## Data Privacy & Quality Notes
+
+- Anonymize individual-level records when reporting (show aggregated metrics only).
+- Document data extraction steps and column mappings; keep a versioned data dictionary.
+- Account for seasonality and significant organizational events (reorgs, large hiring waves) when interpreting results.
+
+## Next Steps (actionable)
+
+1. Confirm target pilot units and obtain HR data access (fields: employee_id, unit_id, absence_date, absence_type, leaver_flag, leaver_reason).
+2. Run baseline extracts for the last 12 months and calculate metric baselines.
+3. Deploy manager training and flexible scheduling pilot; track participation and completion.
+4. Run monthly dashboard updates; conduct the 6‑month interim analysis and adjust as needed.
+
+---
+INSTRUCTIONS:
+1. Replace placeholder unit names and dates with your organization's specifics.
+2. Share baseline numbers (headcount, mean sick days, turnover %) if you want me to convert relative targets into absolute targets.
+3. Ask me to add the sample SQL/Excel templates into a separate file for operational reuse.
