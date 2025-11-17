@@ -50,7 +50,7 @@ Employee Burnout
 - Example: ("employee retention" OR "staff turnover") AND ("small business" OR SME)
 
 ### Search Filters Applied
-- **Date Range:** 2020-2025
+- **Date Range:** 2024
 - **Language:** [Languages included]
 - **Study Types:** [Research designs included/excluded]
 - **Geographic Scope:** [Regions/countries of interest]
