@@ -2,161 +2,110 @@
 # Document your approach to gathering expert insights and professional experience
 
 ## Practitioner Evidence Goals
-**Primary Goal:** [What practitioner insights do you need about your problem?]
-**Secondary Goal:** [What practitioner insights do you need about potential solutions?]
+**Primary Goal:** To understand how healthcare professionals experience burnout, including its key drivers, impacts on patient care, and how organizational culture contributes to or mitigates stress.
+**Secondary Goal:** To gather practitioner insights on effective strategies, programs, and organizational changes that can reduce burnout and improve staff well-being in healthcare settings.
 
 ## Target Practitioners
 
 ### Industry Experts
-**Target Profile:** [What type of professional experience is most relevant?]
-- Years of experience desired: [Range]
-- Industry/sector focus: [Specific industries]
-- Role/position types: [Management levels, functional areas]
-- Company size experience: [Startup, SME, large enterprise]
-- Geographic location: [Local, national, international]
+**Target Profile:** Healthcare professionals with direct experience managing or observing employee burnout in clinical settings.
+- Years of experience desired: 5-20
+- Industry/sector focus: Hospitals, outpatient clinics, long-term care facilities, emergency services, behavioral health
+- Role/position types: Nurse managers, physicians, charge nurses, HR/organizational development leaders in healthcare, clinical directors, healthcare administrators
+- Company size experience: Medium to large healthcare systems; experience with high-volume patient environments preferred
+- Geographic location: National (U.S.) or international practitioners with similar healthcare system pressures
 
 ### Specific Practitioners Identified
-1. **Name/Title/Organization:** [If known]
-   - **Relevance:** [Why this person's experience matters]
-   - **Contact Method:** [How you'll reach them]
 
-2. **Name/Title/Organization:** [If known]
-   - **Relevance:** [Why this person's experience matters]
-   - **Contact Method:** [How you'll reach them]
+1. **Name/Title/Organization:**
+Dr. Colin P. West, MD, PhD
+Title: Medical Director for Employee Well-Being, Mayo Clinic; Director, Mayo Clinic Program on Physician Well-Being 
+Relevance: He’s a leading researcher in physician burnout and well-being, with published work on systemic causes of burnout and resilience among doctors. 
+Contact Method: Mayo Clinic (email via his academic profile); through the Program on Physician Well-Being at Mayo Clinic.
+  
+2. **Name/Title/Organization:** 
+Dr. Stefanie Simmons, MD, FACEP
+Title: Chief Medical Officer, Lorna Breen Heroes’ Foundation
+Relevance: She’s engaged in systemic change around clinician mental health and burnout, especially through the Lorna Breen Heroes’ Foundation, which is focused on supporting healthcare workers’ well-being.
+Contact method: Via Lorna Breen Heroes’ Foundation
 
-3. **Name/Title/Organization:** [If known]
-   - **Relevance:** [Why this person's experience matters]
-   - **Contact Method:** [How you'll reach them]
+3. **Name/Title/Organization:**
+Dr. Kristine Olson, MD, MS
+Title: Chief Wellness Officer, Yale New Haven Health / Yale Medicine
+Releance: As a wellness officer, she is directly involved in organizational-level well-being and burnout-prevention strategies in a major hospital system.
+Contact method: Via Yale New Haven Health leadership office or Yale Medicine; potential LinkedIn outreach.
+
 
 ## Acquisition Methods
 
 ### Expert Interviews
 #### Interview Planning
-- **Target Number:** [How many interviews planned?]
-- **Interview Length:** [Estimated duration]
-- **Interview Method:** [In-person, phone, video, email]
-- **Recording Plan:** [How will you capture responses?]
+- **Target Number:** Planning for three interviews
+- **Interview Length:** 5-10 minutes
+- **Interview Method:** In person and via phone
+- **Recording Plan:** Audio recording and note taking
 
 #### Interview Protocol
 **Opening Questions:**
-- Can you tell me about your experience with [problem area]?
-- How long have you been working in this field/role?
+Can you tell me a bit about your role and how long you’ve been working in this healthcare setting?
+How would you describe a typical day in your position?
+What initially motivated you to work in healthcare, and how has your experience evolved over time?
 
 **Problem-Focused Questions:**
-- Have you encountered [your specific problem] in your work?
-- What causes this type of problem in your experience?
-- How common is this problem in organizations you've worked with?
+What aspects of your work contribute most significantly to feelings of stress or burnout?
+Can you describe a recent moment when you felt overwhelmed or emotionally drained at work?
+How does burnout—your own or others’—affect patient care or team dynamics?
 
 **Solution-Focused Questions:**
-- What approaches have you seen work for this type of problem?
-- What solutions have you tried or observed?
-- What would you recommend based on your experience?
+What changes or improvements would most help reduce burnout among staff in your area?
+Are there any supports or strategies you’ve seen (here or elsewhere) that help prevent or lessen burnout?
+What resources or tools do you think would make the biggest difference in supporting well-being?
 
 **Implementation Questions:**
-- What challenges should we expect when implementing this type of solution?
-- What would you do differently if you were addressing this problem again?
-- What resources or support are critical for success?
+If the organization were to introduce a burnout-reduction initiative, what would be the most realistic first step?
+Who would need to be involved to make these changes successful, and in what ways?
+What obstacles or challenges might get in the way of implementing these solutions, and how could they be addressed?
 
 **Closing Questions:**
-- Who else would you recommend I speak with about this?
-- Is there anything important I haven't asked about?
-
-### Professional Networks
-
-#### LinkedIn Outreach
-- **Target Search Terms:** [Keywords for finding relevant professionals]
-- **Connection Strategy:** [How you'll approach potential contacts]
-- **Message Template:** [Professional outreach message]
-
-#### Industry Associations
-- **Relevant Associations:** [Professional organizations in your field]
-- **Contact Strategy:** [How you'll engage with association members]
-- **Events/Forums:** [Industry events where you might connect with experts]
+Is there anything else about burnout or staff well-being that you think is important for us to understand?
+What would you most want leadership to know about the experience of burnout in your role?
+Would you be interested in participating in follow-up discussions or initiatives aimed at improving workplace well-being?
 
 ### Case Study Research
 
 #### Published Case Studies
-- **Target Sources:** [Harvard Business Review, industry publications, consulting reports]
-- **Search Strategy:** [How you'll find relevant case studies]
-- **Documentation Plan:** [How you'll organize case study insights]
+- **Target Sources:** Peer-reviewed journals: JAMA, BMJ Quality & Safety, Journals of Nursing Administration. Industry publications and Harvard business review. 
+- **Search Strategy:** Use academic databases, harvard business review, review consulting firm webites for case stories.
+- **Documentation Plan:** Spreadsheet format
 
 #### Company Examples
-- **Target Companies:** [Organizations known for addressing similar problems]
-- **Information Sources:** [Annual reports, news articles, presentations]
-- **Contact Strategy:** [How you might reach company representatives]
-
-## Documentation Strategy
-
-### Interview Documentation
-- **Recording:** [Will you record interviews? If so, how?]
-- **Note-taking:** [Real-time notes plus post-interview summary]
-- **Transcription:** [Full or partial transcription plan]
-- **Analysis:** [How you'll analyze and code responses]
+- **Target Companies:** Cleveland Clinic (noted for robust caregiver well-being programs), Mayo Clinic (physician well-being initiatives), Yale New Haven Health (Chief Wellness Officer model)
+- **Information Sources:** Research publications, linkedln posts, and workforce well-being reports 
+- **Contact Strategy:** Reach out with short, respectful inquiry messages emphasizing academic purpose. Professional networks, alumni channels, and conference lists can also be used to find connections.
 
 ### Case Study Documentation
-- **Template:** [Standardized format for case study summaries]
-- **Key Elements:** [What information you'll capture for each case]
-- **Source Tracking:** [How you'll maintain citation information]
+- **Template:** 
+Organization & Setting
+Problem Context (Burnout Indicators)
+Intervention / Initiative
+Implementation Steps
+Outcomes & Metrics
+Lessons Learned
 
-## Outreach Strategy
+- **Key Elements:** 
+Workload factors
+Interventions
+Timeframe and costs
+Quantifiable outcomes (burnout scores, turnover, absenteeism)
+Practitioner feedback (qualitative insights)
+Scalability and barriers encountered
 
-### Contact Approach
-**Initial Contact Message Template:**
-[Draft your professional outreach message]
-
-**Follow-up Strategy:**
-[How and when you'll follow up if no initial response]
-
-**Incentives:**
-[What you can offer in return - summary of findings, networking, etc.]
-
-### Timing Plan
-- **Outreach Start Date:** [When you'll begin contacting practitioners]
-- **Interview Window:** [Timeline for conducting interviews]
-- **Follow-up Period:** [Time allowed for additional questions]
-
-## Ethical Considerations
-
-### Informed Consent
-- **Purpose Explanation:** [How you'll explain your research purpose]
-- **Use of Information:** [How you'll use their insights]
-- **Anonymity/Attribution:** [Will you identify them or keep anonymous?]
-- **Approval Process:** [Will they review how you use their input?]
-
-### Professional Courtesy
-- **Time Respect:** [Staying within agreed time limits]
-- **Preparation:** [Being well-prepared for interactions]
-- **Follow-through:** [Sharing results if promised]
-
-## Expected Challenges
-
-### Access Challenges
-[What difficulties might you face reaching practitioners?]
-
-### Response Rate Concerns
-[What if people don't respond to your outreach?]
-
-### Quality Concerns
-[How will you ensure you get valuable insights?]
-
-### Time Constraints
-[How will time limitations affect your approach?]
+- **Source Tracking:** 
+A file will be created that contains all of my reference data
 
 ## Backup Plans
 
-### Alternative Sources
-[What will you do if you can't reach enough practitioners?]
+Ask administrative staff or wellness coordinators instead of physicians if needed.
+Use published interviews, conference talks, and panel discussions from leaders in clinician well-being.
 
-### Modified Approaches
-[How might you adapt your methods if needed?]
 
-### Minimum Viable Evidence
-[What's the minimum practitioner evidence you need?]
-
----
-INSTRUCTIONS:
-1. Start outreach early - practitioners are busy and may take time to respond
-2. Be professional and clear about your academic purpose
-3. Prepare thoroughly for interviews to make the most of practitioners' time
-4. Have backup sources in case your primary targets aren't available
-5. Consider offering something valuable in return for their time
