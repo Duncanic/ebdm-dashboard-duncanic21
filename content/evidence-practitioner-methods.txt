@@ -1,111 +1,94 @@
-# Practitioner Evidence: Methods & Acquisition Strategy
-# Document your approach to gathering expert insights and professional experience
+# Practitioner Evidence: Expert Insights & Professional Experience
+# Document the insights gathered from practitioners and case studies
 
-## Practitioner Evidence Goals
-**Primary Goal:** To understand how healthcare professionals experience burnout, including its key drivers, impacts on patient care, and how organizational culture contributes to or mitigates stress.
-**Secondary Goal:** To gather practitioner insights on effective strategies, programs, and organizational changes that can reduce burnout and improve staff well-being in healthcare settings.
+## Evidence Summary Overview
 
-## Target Practitioners
+## Case Study 1: 
+### Case Background
+- **Organization:** Mayo Clinic
+- **Industry/Sector:** Healthcare academic medical center
+- **Size/Scope:** Over 75 thousand employees
+- **Timeframe:** Initiative began around 2017 and has continued through updates into 2023–2024
+- **Source:** Peer reviewed article: https://mayoclinic.elsevierpure.com/en/publications/executive-leadership-and-physician-well-being-nine-organizational/
 
-### Industry Experts
-**Target Profile:** Healthcare professionals with direct experience managing or observing employee burnout in clinical settings.
-- Years of experience desired: 5-20
-- Industry/sector focus: Hospitals, outpatient clinics, long-term care facilities, emergency services, behavioral health
-- Role/position types: Nurse managers, physicians, charge nurses, HR/organizational development leaders in healthcare, clinical directors, healthcare administrators
-- Company size experience: Medium to large healthcare systems; experience with high-volume patient environments preferred
-- Geographic location: National (U.S.) or international practitioners with similar healthcare system pressures
+### Problem Context
+- **Problem Description:** Mayo Clinic faced increasing levels of clinician burnout, characterized by emotional exhaustion, reduced professional fulfillment, and rising turnover risk—particularly among physicians and nurses.
+- **Problem Severity:** Burnout scores were comparable to or above national averages for physicians. Workload, EHR documentation burden, and staffing shortages were leading contributors.
+- **Stakeholders Affected:** Physicians, nurses, advanced practice providers, department leaders
+- **Triggering Events:** A series of internal well-being assessments and rising workforce strain revealed systemic issues
 
-### Specific Practitioners Identified
+### Solution Approach
+- **Strategy Chosen:** Their strategy included peer support programs, well-being surveys, and offered leadership training on well-being
+- **Implementation Process:** Department based well-being ommittees, Conducted baseline burnout measurement, and Introduced the “Listen-Act-Develop” model for addressing staff feedback
+- **Resources Invested:** funding for wellnes intiatives, additional personnel specialed in well-being
+- **Timeline:** 18-24 months
 
-1. **Name/Title/Organization:**
-Dr. Colin P. West, MD, PhD
-Title: Medical Director for Employee Well-Being, Mayo Clinic; Director, Mayo Clinic Program on Physician Well-Being 
-Relevance: He’s a leading researcher in physician burnout and well-being, with published work on systemic causes of burnout and resilience among doctors. 
-Contact Method: Mayo Clinic (email via his academic profile); through the Program on Physician Well-Being at Mayo Clinic.
-  
-2. **Name/Title/Organization:** 
-Dr. Stefanie Simmons, MD, FACEP
-Title: Chief Medical Officer, Lorna Breen Heroes’ Foundation
-Relevance: She’s engaged in systemic change around clinician mental health and burnout, especially through the Lorna Breen Heroes’ Foundation, which is focused on supporting healthcare workers’ well-being.
-Contact method: Via Lorna Breen Heroes’ Foundation
+### Results and Outcomes
+- **Measurable Results:** 
+Reduced burnout scores among several clinical departments
+Improved engagement metrics in organizational surveys
+Increased physician retention
+Decreased intentions to leave or reduce clinical hours
 
-3. **Name/Title/Organization:**
-Dr. Kristine Olson, MD, MS
-Title: Chief Wellness Officer, Yale New Haven Health / Yale Medicine
-Releance: As a wellness officer, she is directly involved in organizational-level well-being and burnout-prevention strategies in a major hospital system.
-Contact method: Via Yale New Haven Health leadership office or Yale Medicine; potential LinkedIn outreach.
+- **Qualitative Improvements:** 
+Staff reported feeling more supported and heard
+Improved teamwork and better relationships with leadership
+Greater sense of autonomy and flexibility in scheduling
 
+- **Stakeholder Reactions:** 
+Physicians responded positively to reduction in administrative burdens
+Nurses found peer support programs especially valuable
 
-## Acquisition Methods
+- **Unintended Consequences:** 
+Resource-intensive programs made smaller departments feel temporarily strained
 
-### Expert Interviews
-#### Interview Planning
-- **Target Number:** Planning for three interviews
-- **Interview Length:** 5-10 minutes
-- **Interview Method:** In person and via phone
-- **Recording Plan:** Audio recording and note taking
+## Case Study 2: 
 
-#### Interview Protocol
-**Opening Questions:**
-Can you tell me a bit about your role and how long you’ve been working in this healthcare setting?
-How would you describe a typical day in your position?
-What initially motivated you to work in healthcare, and how has your experience evolved over time?
+### Case Background
+- **Organization:** Mountainview Regional Health Network
+- **Industry/Sector:** Healthcare system with multiple hospitals/outpatient clinics
+- **Size/Scope:** 12,000 employees, 3 community hospitals, and over 50 clinics
+- **Timeframe:** 2019–2024
+- **Source:**  https://pmc.ncbi.nlm.nih.gov/articles/PMC7532952/
 
-**Problem-Focused Questions:**
-What aspects of your work contribute most significantly to feelings of stress or burnout?
-Can you describe a recent moment when you felt overwhelmed or emotionally drained at work?
-How does burnout—your own or others’—affect patient care or team dynamics?
+### Problem Context
+- **Problem Description:** Physicians reported high burnout tied to EHR documentation time, inefficient workflows, and poor work-life boundaries.
+- **Problem Severity:** Internal data showed physicians spending up to 2 hours of EHR work outside clinic hours per day (“pajama time”). Primary care turnover was rising.
+- **Stakeholders Affected:** Physicians, clinic managers, IT and informatics staff, patients.
+- **Triggering Events:** A well-being survey revealed burnout rates above national benchmarks.
 
-**Solution-Focused Questions:**
-What changes or improvements would most help reduce burnout among staff in your area?
-Are there any supports or strategies you’ve seen (here or elsewhere) that help prevent or lessen burnout?
-What resources or tools do you think would make the biggest difference in supporting well-being?
+### Solution Approach
+- **Strategy Chosen:** 
+Leadership development program focused on supportive leadership behaviors.
+EHR and workflow optimization, including scribes and documentation templates.
 
-**Implementation Questions:**
-If the organization were to introduce a burnout-reduction initiative, what would be the most realistic first step?
-Who would need to be involved to make these changes successful, and in what ways?
-What obstacles or challenges might get in the way of implementing these solutions, and how could they be addressed?
+- **Implementation Process:** 
+Trained department and clinic leaders in evidence-based well-being leadership practices.
+Introduced medical scribes in high-volume clinics.
+Streamlined EHR templates and automated repetitive data entry.
 
-**Closing Questions:**
-Is there anything else about burnout or staff well-being that you think is important for us to understand?
-What would you most want leadership to know about the experience of burnout in your role?
-Would you be interested in participating in follow-up discussions or initiatives aimed at improving workplace well-being?
+- **Resources Invested:** 
+Budget for scribes and informatics team
+Leadership coaching consultants
+IT upgrades
+Staff time for training and testing EHR changes
 
-### Case Study Research
+- **Timeline:** 
+6-8 months for leadership training
 
-#### Published Case Studies
-- **Target Sources:** Peer-reviewed journals: JAMA, BMJ Quality & Safety, Journals of Nursing Administration. Industry publications and Harvard business review. 
-- **Search Strategy:** Use academic databases, harvard business review, review consulting firm webites for case stories.
-- **Documentation Plan:** Spreadsheet format
+### Results and Outcomes
+- **Measurable Results:** 
 
-#### Company Examples
-- **Target Companies:** Cleveland Clinic (noted for robust caregiver well-being programs), Mayo Clinic (physician well-being initiatives), Yale New Haven Health (Chief Wellness Officer model)
-- **Information Sources:** Research publications, linkedln posts, and workforce well-being reports 
-- **Contact Strategy:** Reach out with short, respectful inquiry messages emphasizing academic purpose. Professional networks, alumni channels, and conference lists can also be used to find connections.
+Physician burnout reduced by ~20% over two years.
+“Pajama time” decreased by ~45 minutes per day.
+Patient throughput increased due to reduced documentation delays.
 
-### Case Study Documentation
-- **Template:** 
-Organization & Setting
-Problem Context (Burnout Indicators)
-Intervention / Initiative
-Implementation Steps
-Outcomes & Metrics
-Lessons Learned
+- **Qualitative Improvements:** 
+Physicians felt more supported by leadership.
+Better work-life boundaries.
+More face-to-face time with patients, less screen time.
 
-- **Key Elements:** 
-Workload factors
-Interventions
-Timeframe and costs
-Quantifiable outcomes (burnout scores, turnover, absenteeism)
-Practitioner feedback (qualitative insights)
-Scalability and barriers encountered
-
-- **Source Tracking:** 
-A file will be created that contains all of my reference data
-
-## Backup Plans
-
-Ask administrative staff or wellness coordinators instead of physicians if needed.
-Use published interviews, conference talks, and panel discussions from leaders in clinician well-being.
-
-
+- **Stakeholder Reactions:** 
+Physicians overwhelmingly supported scribe program.
+Some initial budget concerns among administrators.
+IT teams appreciated clearer priorities for documentation fixes.
