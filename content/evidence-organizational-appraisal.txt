@@ -1,7 +1,3 @@
-# Organizational Evidence: Quality Assessment
-# Evaluate the credibility and usefulness of organizational data collected
-
-## Overall Data Quality Assessment
 
 ### Data Source Reliability
 
