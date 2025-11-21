@@ -11,7 +11,6 @@
 ### Problem-Related Metrics
 
 #### Metric 1: Employee Turnover Rate
-[Metric Name]
 - **Current Value:** 18% annual turnover
 - **Historical Trend (12 months):** up 2% vs prior year 
 - **Benchmark Comparison:** RN turnover in U.S. hospitals is roughly 16.4% (AAG Health Data)
