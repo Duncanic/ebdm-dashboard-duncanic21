@@ -2,166 +2,149 @@
 # Document your approach to gathering internal organizational evidence
 
 ## Internal Evidence Goals
-**Primary Goal:** [What internal data do you need about your problem?]
-**Secondary Goal:** [What internal data do you need about solution feasibility?]
+**Primary Goal:** Identify, measure, and understand the extent, patterns, and drivers of employee burnout within the healthcare organization.
+**Secondary Goal:** Assess the feasibility, resource requirements, and expected impact of implementing burnout-reduction interventions
 
 ## Available Data Sources
 
 ### Performance Metrics/KPIs
-- **Financial Data:** [Revenue, costs, profitability metrics]
-- **Operational Data:** [Efficiency, productivity, quality metrics]
-- **Human Resources Data:** [Turnover, satisfaction, performance metrics]
-- **Customer Data:** [Satisfaction, retention, acquisition metrics]
-- **Other Relevant Metrics:** [Industry-specific measurements]
+- **Financial Data:** overtime expenditures, financial impact of sick leave, budget for intervention programs
+- **Operational Data:** Avg timer per patient, staffing ratios, compliance with clinical protocols
+- **Human Resources Data:** Engagement survey results, employee well-being, performance review patterns related to stress or burnout
+- **Customer Data:** complaints related to service quality, patient satisfaction scores, care. continuity
 
 ### Internal Systems
-- **CRM Systems:** [Customer relationship data]
-- **ERP Systems:** [Enterprise resource planning data]
-- **HR Information Systems:** [Employee data and metrics]
-- **Financial Systems:** [Accounting and financial data]
-- **Operations Systems:** [Production, service delivery data]
+- **CRM Systems:** Patient satisfaction trends, Complaint data indicating care delay or provider stress
+- **ERP Systems:** Scheduling data, labor cost tracking, supply chain issues causing interruptions with staff
+- **HR Information Systems:** 
+**Turnover data:**
+Absenteeism and PTO reports
+Engagement/wellbeing survey results
+Performance evaluations
+
+- **Financial Systems:**
+Budget tracking for intervention programs
+Cost analysis of staff burnout (overtime, agency staffing, turnover costs)
+Financial projections for implementing interventions
+
+- **Operations Systems:** 
+Workflow metrics (task time, caseload volumes)
+Staffing logs (actual vs. planned coverage)
+Incident reporting systems (errors, near misses, safety reports)
 
 ### Reports and Documentation
-- **Regular Reports:** [Monthly, quarterly, annual reports]
-- **Survey Results:** [Employee, customer, stakeholder surveys]
-- **Audit Results:** [Internal and external audit findings]
-- **Assessment Reports:** [Performance reviews, process evaluations]
-- **Historical Studies:** [Previous internal research or analysis]
+
+**Regular Reports:**
+Monthly staffing & labor reports
+Weekly operational dashboards (census, acuity, overtime)
+Quarterly quality and safety reports
+Annual financial and HR summaries
+
+**Assessment Reports:**
+
+Workflow analysis (time-motion studies)
+Unit-level stressor reports
+Process evaluations for previous wellbeing or scheduling initiatives
+
+**Historical Studies:**
+
+Prior internal burnout assessments
+Previous pilot intervention results (e.g., mindfulness programs, schedule changes)
+Organizational climate or workforce studies
+Post-incident reviews or crisis assessments (e.g., COVID-era analyses)
+
+**Survey Results:**
+
+Annual or quarterly employee engagement surveys
+Burnout-specific pulse surveys
+Patient satisfaction surveys
+Cultural or psychological safety assessments
+
+
 
 ## Data Collection Plan
 
-### Quantitative Data Collection
+## Quantitative Data Collection
 #### Metrics to Collect
-[List specific metrics relevant to your problem and solution]
 
 **Problem-Related Metrics:**
-- Metric 1: [Name] - Current value: [Number] - Data source: [Where to find it]
-- Metric 2: [Name] - Current value: [Number] - Data source: [Where to find it]
-- Metric 3: [Name] - Current value: [Number] - Data source: [Where to find it]
+- Metric 1: [Burnout score] Data source: employee well being surveys/ HR pulse surveys
+- Metric 2: [Staff turnover rate] - Current value: X% annually or quarterly - Data source: HR information systems
+- Metric 3: [Absenteeism] - Data source: Attendance logs, payroll system, HRIS
 
 **Solution-Related Metrics:**
-- Metric 1: [Name] - Baseline: [Number] - Data source: [Where to find it]
-- Metric 2: [Name] - Baseline: [Number] - Data source: [Where to find it]
-- Metric 3: [Name] - Baseline: [Number] - Data source: [Where to find it]
+- Metric 1: [Participation Rate in Burnout Intervention Program] - Data source: [learning management systems, sign in logs]
+- Metric 2: [Burnout Score Change (pre/post intervention)] - Data source: Well-being surveys
+- Metric 3: [Staffing Ratio Stability / Schedule Variability] - Data source: well being surveys
 
 #### Time Period Analysis
-- **Historical Data Range:** [How far back will you look?]
-- **Trend Analysis Period:** [What timeframe for trend identification?]
-- **Seasonal Considerations:** [Any seasonal patterns to account for?]
-- **Baseline Period:** [What period represents "normal" operations?]
+- **Historical Data Range:** 12–24 months of HR, staffing, and patient safety data (to establish trends before intervention).
+- **Trend Analysis Period:** Quarterly or monthly
+- **Seasonal Considerations:** Winter flu season increases patient volume and burnout risk, Summer staffing shortages, Holidays (higher absenteeism), Residency cycles in teaching hospitals
 
-### Qualitative Data Collection
-#### Internal Documents Review
-- **Policy Documents:** [Relevant policies and procedures]
-- **Meeting Minutes:** [Records of relevant discussions]
-- **Communication Records:** [Emails, memos, announcements]
-- **Project Reports:** [Previous initiative outcomes]
+- **Baseline Period:** The 3–6 months prior to intervention rollout
 
-#### Observational Data
-- **Process Observations:** [What processes can you observe?]
-- **Workflow Analysis:** [How work actually gets done]
-- **Communication Patterns:** [How information flows]
-- **Cultural Observations:** [Organizational behavior patterns]
+## Observational Data
+
+- **Process Observations:**
+Shift handoff processes
+Medication administration workflow
+Patient triage during peak times
+
+- **Workflow Analysis:** 
+Documenting bottlenecks (e.g., delays in labs or transport)
+Mapping tasks performed outside of official job role
+Observing physical strain or logistical stressors
+
+- **Communication Patterns:** 
+How information flows across shifts and roles
+Team cohesion or breakdowns in communication under stress
+Escalation pathways during overload
+
+- **Cultural Observations:**
+Norms around asking for help
+Attitudes toward breaks (skipped meals, working through fatigue)
+Leadership visibility and support
+Emotional climate on units
+
+## Qualitative Data Collection
+Internal Documents Review
+
+- **Policy Documents:** 
+Staffing policies and workload allocation guidelines
+Mandatory overtime policies
+Break and rest period regulations
+Employee wellbeing or mental health support policies
+
+- **Meeting Minutes:** 
+Unit staff meetings
+Nursing leadership councils
+Quality & safety committees
+HR/Wellbeing steering group discussions
+
+- **Communication Records:** 
+Memos on burnout, staffing challenges, or support initiatives
+Email communications announcing previous interventions
+Leadership updates about organizational stressors
+
+
+- **Project Reports:** 
+Outputs of past burnout, resilience, or scheduling improvement pilots
+Results of staff engagement surveys and action plans
+Quality improvement reports involving workflow redesign
+
 
 ## Access and Permissions
 
 ### Data Access Strategy
 #### Required Permissions
-- **Data Custodians:** [Who controls access to different data sources?]
-- **Approval Process:** [What approvals are needed?]
+- **Data Custodians:** HR departments, Nursing, medical directors, quality & Safety Office, IT/Data Analytics Team
+- **Approval Process:** Institutional approval, IRB Approval, requests through internal data governance process
 - **Privacy Considerations:** [What privacy restrictions apply?]
-- **Confidentiality Requirements:** [What confidentiality agreements needed?]
-
-#### Contact Plan
-1. **Primary Contact:** [Name, role, contact information]
-   - **Data Sources:** [What data they control]
-   - **Approach:** [How you'll request access]
-
-2. **Secondary Contact:** [Name, role, contact information]
-   - **Data Sources:** [What data they control]
-   - **Approach:** [How you'll request access]
+- **Confidentiality Requirements:** Use only aggregated, de-identified data, Follow HIPAA rules for any patient-related indicators, Limit access to personal identifiers (only when absolutely necessary)
 
 ### Ethical Considerations
-- **Employee Privacy:** [How will you protect individual privacy?]
-- **Data Security:** [How will you secure sensitive data?]
-- **Use Limitations:** [How will you limit use of internal data?]
-- **Reporting Boundaries:** [What can/cannot be shared externally?]
-
-## Data Analysis Plan
-
-### Baseline Establishment
-#### Pre-Problem Baselines
-[What did performance look like before the problem emerged?]
-
-#### Normal Operating Ranges
-[What constitutes normal vs. abnormal performance?]
-
-#### Benchmark Comparisons
-[How does performance compare to industry standards or internal targets?]
-
-### Problem Evidence Analysis
-#### Problem Indicators
-[What data would confirm the problem exists?]
-
-#### Problem Severity Measurement
-[How will you quantify the severity of the problem?]
-
-#### Root Cause Investigation
-[What data analysis might reveal underlying causes?]
-
-### Solution Feasibility Analysis
-#### Resource Assessment
-[What internal data shows resource availability for solutions?]
-
-#### Capability Assessment
-[What data shows organizational capability for change?]
-
-#### Risk Assessment
-[What internal data reveals potential implementation risks?]
-
-## Documentation Strategy
-
-### Data Collection Log
-[How will you track what data you collect and when?]
-
-### Analysis Documentation
-[How will you document your analysis process and findings?]
-
-### Quality Assurance
-[How will you ensure data accuracy and completeness?]
-
-### Version Control
-[How will you manage different versions of data and analysis?]
-
-## Expected Challenges
-
-### Data Availability
-[What data might not be available or accessible?]
-
-### Data Quality Issues
-[What data quality problems might you encounter?]
-
-### Access Barriers
-[What obstacles might prevent data access?]
-
-### Time Constraints
-[How might time limitations affect data collection?]
-
-## Backup Plans
-
-### Alternative Data Sources
-[What alternatives exist if primary sources aren't available?]
-
-### Proxy Measures
-[What substitute metrics could you use if ideal data isn't available?]
-
-### Simplified Analysis
-[What's the minimum viable organizational evidence you need?]
-
----
-INSTRUCTIONS:
-1. Start with readily available data before pursuing hard-to-access information
-2. Be respectful of privacy and confidentiality when requesting internal data
-3. Focus on data most relevant to your specific problem and solution
-4. Document your data sources and analysis methods clearly
-5. Have backup plans for inaccessible data
+- **Employee Privacy:** Yes, by protecting anonymity in surveys, interviews, and documentation
+- **Data Security:** Use encrypted storage and folloe institutional IT and privacy compliance protocols
+- **Use Limitations:** Data used only for burnout assessment and program improvement
+- **Reporting Boundaries:** Report only trends, not identifiable incidents
